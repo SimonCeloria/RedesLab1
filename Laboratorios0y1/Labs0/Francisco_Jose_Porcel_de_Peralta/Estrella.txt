@@ -1,0 +1,29 @@
+__________________
+☆ Punto Estrella ☆
+__________________
+
+Investigacion sobre Mecanismos para funcionamiento de Links con
+caracteres extraños y emojis. 
+
+Esto funciona gracias a la Codificacion.
+Una URL solo se puede enviar utilizando caracteres ASCII,
+por lo tanto cuando se presenta un caracter qeu no sea ASCII,
+es posible "codificarlo" para representarlo, es decir asignarle 
+una serie de caracteres ASCII que representen dicho caracter
+en particular, permitiendo asi su uso en una URL. 
+
+Cuando se presenta un caracter extraño, este se remplaza por 
+"%" seguido de 2 digitos Hexadecimales.
+
+Esto tambien aplica a los Espacios, que no pueden estar presentes
+en una URL por lo que son remplazados por "+" o %20.
+
+en Python podriamos hacer esta Codificacion con la funcion 
+encode(), la cual toma como argumento el formato al cual queremos
+codificar el texto, mas si se deja vacio toma UTF-8 el cual es
+el que se usa en este caso. 
+
+Esto podemos verlo con el sitio "💩.la", puesto que
+si codificaramos dicho emoji en UTF-8 obtendriamos %F0%9F%92%A9
+y si buscamos "%F0%9F%92%A9.la" vemos que nos llevara 
+a la misma pagina.

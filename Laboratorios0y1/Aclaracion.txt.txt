@@ -1,0 +1,1 @@
+No se que conflicto tiene mi PC con git que hizo un logeo distinto y bitbuket no reconoce que subi yo el commit (Simon Celoria), asi que si en los commit ve "Unknown" vienen de mi
